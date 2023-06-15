@@ -21,7 +21,7 @@ function App() {
     return (
         <>
 
-            <EffectComposer>
+            <EffectComposer> // Adding post-processing effects
                 <DepthOfField focusDistance={0} focalLength={0.02} bokehScale={5} height={480} />
                 <Bloom intensity={2} luminanceThreshold={0.1} luminanceSmoothing={0.9} height={1000} />
                 <Vignette eskil={false} offset={.1} darkness={1.5} />
@@ -63,8 +63,6 @@ function App() {
                         <Butterfly scale={0.05} position={[12,-14,-10]}/>
                     </Float>
 
-                    {/* Middle */}
-
                     <Float
                         speed={1} // Animation speed, defaults to 1
                         rotationIntensity={2} // XYZ rotation intensity, defaults to 1
@@ -95,6 +93,9 @@ function App() {
                 </Scroll>
 
                 <Scroll html style={{width: '100%'}}>
+
+                    {/*Container with headers*/}
+
                     <Container style={{height: '100px', position: 'relative'}} >
                         <Row className='text-center align-items-center justify-content-center' style={{position: 'absolute',width: '100%',height: '100vh', padding: '0px 30px 0px'}}>
                             <Col xs={6}>
