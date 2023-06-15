@@ -37,7 +37,9 @@ function App() {
             <ScrollControls pages={6} damping={0.25}>
 
                 <Scroll>
-                    {/* top */}
+
+                    {/* Top */}
+
                     <Float
                         speed={1} // Animation speed, defaults to 1
                         rotationIntensity={2} // XYZ rotation intensity, defaults to 1
@@ -48,9 +50,9 @@ function App() {
                         <Butterfly scale={0.05} position={[-10,-3,-6]}/>
                         <Butterfly scale={0.05} position={[10,-4,-10]}/>
                     </Float>
-                    {/* top */}
 
-                    {/* middle */}
+                    {/* Middle */}
+
                     <Float
                         speed={1} // Animation speed, defaults to 1
                         rotationIntensity={2} // XYZ rotation intensity, defaults to 1
@@ -60,9 +62,9 @@ function App() {
                         <Butterfly scale={0.05} position={[-1,-12.5,0]}/>
                         <Butterfly scale={0.05} position={[12,-14,-10]}/>
                     </Float>
-                    {/* middle */}
 
-                    {/* middle */}
+                    {/* Middle */}
+
                     <Float
                         speed={1} // Animation speed, defaults to 1
                         rotationIntensity={2} // XYZ rotation intensity, defaults to 1
